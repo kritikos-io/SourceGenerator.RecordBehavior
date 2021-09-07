@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)Generated</CompilerGeneratedFilesOutputPath>
+    <Kritikos_SourceGenerator_Debug>false</Kritikos_SourceGenerator_Debug>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <CompilerVisibleProperty Include="Kritikos_SourceGenerator_Debug" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\SourceGenerator.RecordBehavior\SourceGenerator.RecordBehavior.csproj" OutputItemType="Analyzer" />
+  </ItemGroup>
+
+</Project>
